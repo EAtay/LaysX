@@ -1,0 +1,169 @@
+main {
+    width: 100%;
+    margin: auto;
+    font-family: 'Poppins';
+    align-items: center;
+    text-align: center;
+    height: auto;
+    color: rgb(227, 210, 210);
+    padding: 0 10px;
+    background: rgb(2, 1, 14);
+    background: linear-gradient(90deg, rgba(2, 1, 14, 1) 0%, rgba(16, 15, 38, 1) 49%, rgba(2, 1, 14, 1) 100%);
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 150px 10px 195px 180px;
+}
+
+.left-side {
+    opacity: .7;
+    padding: 0 15px;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-moon {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: 100;
+}
+
+.title-context {
+    margin: 22px 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: 'Kdam Thmor Pro';
+    font-size: 26px;
+}
+
+.title-about {
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+
+}
+
+.title-about {
+    color: #fff;
+    width: 100%;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+.typewriter {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    max-width: 640px;
+}
+
+@keyframes letters {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50ch;
+    }
+}
+
+@keyframes lines {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes cursor-type {
+    50% {
+        border-color: #000;
+    }
+}
+
+@keyframes cursor-wait {
+    0% {
+        box-shadow: inset 2px 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    1% {
+        box-shadow: inset 2px 0 0 0 black;
+    }
+
+    40% {
+        box-shadow: inset 2px 0 0 0 black;
+    }
+}
+
+.start {
+    margin-top: 48px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 26px;
+    width: 60%;
+    background: none;
+    border: 2px solid rgb(227, 210, 210);
+    border-radius: 45px;
+    padding: 4px 10px;
+}
+
+.start:hover {
+    background: rgb(171, 141, 197);
+    transition: .6s;
+    color: rgb(28, 18, 52);
+    border: 2px solid rgb(132, 127, 137);
+}
+
+@media (max-width:860px) {
+    .container{
+    padding: 100px 10px 155px 0;
+    flex-direction: column;
+    }
+}
